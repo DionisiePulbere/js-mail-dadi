@@ -21,15 +21,19 @@
 const userNumber = Math.floor(Math.random() * 6) + 1;
 const computerNumber = Math.floor(Math.random() * 6) + 1;
 
+// Stabilisco le condizioni 
 let userMessage = "Mi dispaice, hai perso!";
 
 if (userNumber > computerNumber){
     userMessage = "Complimenti, hai vinto!";
+} else if (userNumber === computerNumber){
+    userMessage = "Pareggio"
 }
-
+// Raccolgo il risultato
 let showUserNumber = "Il tuo numero è " + userNumber;
 let showComputerNumber = "Il numero del computer è " + computerNumber;
 
+// stampo le risposte
 alert(showUserNumber);
 alert(showComputerNumber);
 alert(userMessage);
