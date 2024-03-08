@@ -15,3 +15,29 @@
 // 3. si ma noi cosa vogliamo fare?
 // 4. torniamo a scrivere in italiano
 // 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
+
+
+// Lista di E-Mail 
+const emailList = ["mariorossi@mail.it", "markcaltagirone@mail.it", "lisa@mail.it", "bart@mail.it" , "homer@mail.it", "marge@mail.it", "flanders@mail.it", "apu@mail.it", "meggie@mail.it"];
+
+// chiedere all'utente la propria Mail
+const userEmail = prompt("Inserire la propria E-Mail");
+
+let emailFound = false;
+let userMessage = "La tua E-Mail non è presente"
+// stabilire le condizoni 
+for (let i = 0; i < emailList.length; i++){
+    const thisEmail =emailList[i];
+
+    if (thisEmail === userEmail){
+        emailFound = true;
+    }
+    
+    if (emailFound === true){
+        userMessage = "La tua E-Mail è presente"
+    }
+}
+
+alert(userMessage)
+
+
