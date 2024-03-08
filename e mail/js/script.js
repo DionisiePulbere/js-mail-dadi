@@ -24,20 +24,20 @@ const emailList = ["mariorossi@mail.it", "markcaltagirone@mail.it", "lisa@mail.i
 const userEmail = prompt("Inserire la propria E-Mail");
 
 let emailFound = false;
-let userMessage = "La tua E-Mail non è presente"
-// stabilire le condizoni 
+let userMessage = "La tua E-Mail non è presente";
+// creare il ciclo 
 for (let i = 0; i < emailList.length; i++){
     const thisEmail =emailList[i];
-
+    // stabilire le condizoni
     if (thisEmail === userEmail){
         emailFound = true;
     }
-    
+    // creare il messaggio di risposta
     if (emailFound === true){
-        userMessage = "La tua E-Mail è presente"
+        userMessage = "La tua E-Mail è presente";
     }
 }
-
-alert(userMessage)
+// Stamapre la rispsota 
+alert(userMessage);
 
 
