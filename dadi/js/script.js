@@ -15,3 +15,21 @@
 // 3. si ma noi cosa vogliamo fare?
 // 4. torniamo a scrivere in italiano
 // 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
+
+
+// Genero 2 numeri casuali 
+const userNumber = Math.floor(Math.random() * 6) + 1;
+const computerNumber = Math.floor(Math.random() * 6) + 1;
+
+let userMessage = "Mi dispaice, hai perso!";
+
+if (userNumber > computerNumber){
+    userMessage = "Complimenti, hai vinto!";
+}
+
+let showUserNumber = "Il tuo numero è " + userNumber;
+let showComputerNumber = "Il numero del computer è " + computerNumber;
+
+alert(showUserNumber);
+alert(showComputerNumber);
+alert(userMessage);
